@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ofelia Ossum</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500&display=swap');
+
+        body {
+            /* background-image: url('img/Funkhaus.jpeg'); */
+            background: linear-gradient(45deg, #ebdaaa, rgb(194, 246, 237));
+            /* background-size: 960px; */
+            font-family: Work sans;
+            color: #3b2d02;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+
+        .kontakt-link {
+            color: rgb(29, 106, 79)
+        }
+
+        .kontakt-link:hover {
+            color: rgb(52, 168, 123);
+        }
+
+        .bakgrunnsfarge {
+            background-color: rgba(11, 8, 7, 0.5);
+        }
+
+        .ofelia-spesialfarge {
+            color: cornflowerblue;
+        }
+
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 105px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .banner {
+            background-image: url('img/Ped2.jpeg');
+            float: left;
+            width: 60%;
+        }
+
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 28px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 26px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 26px;
+        }
+
+        .vanlig-tekst {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .kontakt-innhold {
+            color: rgb(93, 0, 255);
+            padding-left: 20px;
+            /* margin vs padding: margin lager avstand mellom seg og neste element, mens padding "fyller" ut seg selv */
+        }
+
+        @media screen and (min-width: 680px) {
+            .wrapper {
+                display: flex;
+                align-items: stretch;
+            }
+
+            .two {
+                flex: 3;
+                padding-right: 5rem;
+                padding-left: 3rem;
+            }
+            .prosjekt-link {
+            color: #022c18;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .prosjekt-link:hover {
+            color: #022c18;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 105px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 28px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 26px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 26px;
+        }
+
+        .bildetekst {
+            font-size: 14px;
+            margin-bottom: 12rem;
+        }
+        }
+        @media screen and (max-width: 679px) {
+            .wrapper {
+                display: flex;
+                align-items: stretch;
+                flex-direction: column;
+            }
+            .wrapper div {
+                padding: 0!important;
+            }
+            .prosjekt-link {
+            color: #022c18;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .prosjekt-link:hover {
+            color: #022c18;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 64px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 22px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 20px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .bildetekst {
+            font-size: 14px;
+            margin-bottom: 2rem;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overskrift-bakgrunn">
+        <h1 class="overskrift" style="color:#ebdaaa;">Ofelia Ossum</h1>
+        <h3 style="font-weight:lighter; font-size:38px; color:#ebdaaa; text-align:center">Musician and composer</h3>
+        <h3 style="text-align: left; font-weight:normal; color:#ebdaaa;">
+            <div class="meny-linker">
+                <a href="index.html">Home</a>
+                <span>About</span>
+                <a href="projects.html">Projects</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </h3>
+    </div>
+    <br>
+    <div class="wrapper">
+        <div style="flex: 1;">
+            
+            <img style="width: 100%" src="img/Team Me synge mindre.jpeg" /><br>
+            <p style="font-size: 14px;">Photo: Bård Gundersen</p>
+        </div>
+        <div  style="flex: 2; padding-left:4rem; padding-right:4rem">
+            <p class="vanlig-tekst"><strong>Bio</strong>
+                <br>
+                <br>
+                <strong>Julie Ofelia Østrem Ossum</strong> (b. 1990) is a Norwegian musician and composer, and her main instruments are cello, piano and voice. 
+                Although playing mostly classical music growing up, she has mainly focused on alternative indie/pop/rock and experimental contemporary music during her whole professional career.
+                <br>
+                <br>
+                For some years, she studied contemporary classical composition at the Norwegian Academy of Music, and before that, musicology at the University of Oslo.
+                <br>
+                <br>
+                Ofelia likes to mix and experiment with different genres, like traditional Norwegian folk music, pop, contemporary classical music and others, 
+                and also to experiment with the instruments themselves. Especially when playing cello, she is known for adding various amounts of effects to push the limits 
+                of what's possible in both live settings and in studio. As a pianist and vocalist she is also comfortable playing traditional classical music as well as pop music and experimental/improvisation. 
+                She is quite happy playing all three instruments almost at the same time.
+                <br>
+                <br>
+                When composing, she writes a lot of arrangements for her own bands as well as other bands/artists with especially string and brass/wind ensembles, 
+                in addition to writing her own music as a solo artist.
+                <br>
+                Amongst her own compositions you find pieces for sinfonietta, smaller ensembles in different constellations and solo pieces for piano, strings and winds. 
+                Like when she plays herself, she sometimes adds parts of live electronics and/or improvisation as well. Ofelia has also written a fair amount of compositions and arrangements 
+                for several types of vocal ensembles; like trios, quintets, octets and choirs.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>

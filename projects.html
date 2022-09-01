@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ofelia Ossum</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500&display=swap');
+
+        body {
+            /* background-image: url('img/Funkhaus.jpeg'); */
+            background: linear-gradient(45deg, #ebdaaa, rgb(194, 246, 237));
+            /* background-size: 960px; */
+            font-family: Work sans;
+            color: #3b2d02;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+
+        table {
+            width: 100%;
+            border: solid;
+            background-color: rgba(44, 127, 112, 0.386);
+        }
+
+        th {
+            border: solid;
+        }
+
+        td {
+            border: solid;
+        }
+
+        .kontakt-link {
+            color: rgb(29, 106, 79)
+        }
+
+        .kontakt-link:hover {
+            color: rgb(52, 168, 123);
+        }
+
+        .bakgrunnsfarge {
+            background-color: rgba(11, 8, 7, 0.5);
+        }
+
+        .ofelia-spesialfarge {
+            color: cornflowerblue;
+        }
+
+        
+
+        .banner {
+            background-image: url('img/Ped2.jpeg');
+            float: left;
+            width: 60%;
+        }
+
+        
+
+        .vanlig-tekst {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .kontakt-innhold {
+            color: rgb(93, 0, 255);
+            padding-left: 20px;
+            /* margin vs padding: margin lager avstand mellom seg og neste element, mens padding "fyller" ut seg selv */
+        }
+
+        
+
+        /*.prosjekt-dropdown {
+            color:#022c18;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            background-color: transparent;
+            width: 75px;
+        }
+
+        .prosjekt-dropdown option::selection {
+            color:#022c18;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            padding: none;
+        }
+        */
+
+        .some-link {
+            color: #022c18;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .some-link:hover {
+            color: #022c18;
+            font-weight: 400;
+        }
+
+        @media screen and (min-width: 680px) {
+            .wrapper {
+                display: flex;
+                align-items: stretch;
+            }
+
+            .two {
+                flex: 3;
+                padding-right: 5rem;
+                padding-left: 3rem;
+            }
+            .prosjekt-link {
+            color: #022c18;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .prosjekt-link:hover {
+            color: #022c18;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 105px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 28px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 26px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 26px;
+        }
+
+        .bildetekst {
+            font-size: 14px;
+            margin-bottom: 12rem;
+        }
+        }
+
+        @media screen and (max-width: 679px) {
+            .wrapper {
+                display: flex;
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            .two {
+                flex: 3;
+            }
+            .prosjekt-link {
+            color: #022c18;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .prosjekt-link:hover {
+            color: #022c18;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 64px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 22px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 20px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .bildetekst {
+            font-size: 14px;
+            margin-bottom: 2rem;
+        }
+        }
+
+        .one {
+            flex: 2;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="topp" class="overskrift-bakgrunn">
+        <h1 class="overskrift" style="color:#ebdaaa;">Ofelia Ossum</h1>
+        <h3 style="font-weight:lighter; font-size:38px; color:#ebdaaa; text-align:center">Musician and composer</h3>
+        <h3 style="text-align: left; font-weight:normal; color:#ebdaaa;">
+            <div class="meny-linker">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <span>Projects</span>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </h3>
+    </div>
+    <br>
+    <div class="vanlig-tekst wrapper">
+        <div class="one">
+            <img style="width: 100%" src="img/UT Connewitz piano (VS).jpeg" /><br>
+            <p class="bildetekst">Photo: Viktor Schanz</p>
+            <img style="width: 100%" src="img/Team Me festival (B. Gundersen).jpeg"><br>
+            <p class="bildetekst">Photo: Bård Gundersen</p>
+            <img style="width: 100%" src="img/Cello+REMIC og litt pedaler (2017).jpeg"><br>
+            <p class="bildetekst">Photo: Lars Fremmerlid</p>
+            <img style="width: 100%" src="img/Funkhaus.jpeg"><br>
+            <p class="bildetekst">Photo: Markus Tora Mori Green</p>
+        </div>
+        <div class="vanlig-tekst two">
+            <p>
+                <!-- <select class="prosjekt-dropdown">
+                    <option default>Band</option>
+                    <option>Team Me</option>
+                    <option>Einar Stray Orchestra</option>
+                    <option>Solo</option>
+                    <option>Other</option>
+                </select> -->
+                    <a class="prosjekt-link" style="padding-right: 1.5rem" href="#bands">Bands</a>
+                    <a class="prosjekt-link" style="padding-right: 1.5rem" href="#misc">Misc</a>
+                    <a class="prosjekt-link" style="padding-right: 1.5rem" href="#comp">Composition/arr</a>
+                    <a class="prosjekt-link" style="padding-right: 1.5rem" href="#prod">Production/recording</a>
+                    <a class="prosjekt-link" style="padding-right: 1.5rem" href="#events">Events</a>
+                    <a class="prosjekt-link" href="#lessons">Lessons</a>
+                <br>
+                <br>
+                One of my favorite things about being a musician and composer is that I get to work on a lot of
+                different projects.
+                Don't hesitate to contact me for more information about a specific project. Here are some of my main
+                work areas.
+                <br>
+                <br>
+                <br>
+                <a id="bands" class="prosjekt-link" href="https://www.teammeband.com/" target="_blank">Team Me</a>
+                <br>
+                <br>
+                Team Me is an energetic indie band with a Norwegian Grammy award and several radio hits on the list.
+                Since the first EP, released in 2010, I've been playing on most of the recordings, and in 2018 I became
+                a permanent member of the live band as well.
+                On stage I get to jump between my favorite instruments all the time, which fits me perfectly. Team Me
+                has released several albums and EPs, and is touring all over Norway, Europe and Japan.
+
+                <br>
+                <br>
+                <a class="some-link" href="https://www.instagram.com/teammeband/" target="_blank"><img
+                        src="https://instagram.com/favicon.ico" style="padding-right:2rem"></a>
+                <a class="some-link" href="https://www.facebook.com/TeamMeBand" target="_blank"><img
+                        src="img/Facebook_Logo.png" style="width:35px; padding-right:2rem"></a>
+                <a class="some-link" href="https://open.spotify.com/artist/6sVtsKPUjWlLH4sNbhoNF5" target="_blank"><img
+                        src="img/Spotify-icon.png" style="width:40px"></a>
+                <br>
+                <br>
+                <br>
+                <a class="prosjekt-link" href="https://www.einarstrayorchestra.com/" target="_blank">Einar Stray
+                    Orchestra</a>
+                <br>
+                <br>
+                Einar Stray Orchestra is the band I've been a part of the longest. Since the small beginning in 2007, we
+                have evolved from a bedroom indie solo project to a sometimes hard-hitting band with a sound that spans
+                from classical music to post-rock and prog.
+                This is where I first started to experiment with sound, pedal effects and genres, and where I've
+                fine-tuned the skill of playing cello, singing, and maneuvering pedals at the same time.
+                ESO has also a long list of recordings, and is also touring all over Norway, Europe and worldwide.
+                <br>
+                <br>
+                <a class="some-link" href="https://www.instagram.com/einarstrayorchestra/" target="_blank"><img
+                        src="https://instagram.com/favicon.ico" style="padding-right:2rem"></a>
+                <a class="some-link" href="https://www.facebook.com/einarstrayorchestra" target="_blank"><img
+                        src="img/Facebook_Logo.png" style="width:35px; padding-right:2rem"></a>
+                <a class="some-link" href="https://open.spotify.com/artist/3KNKt7f2QCeOhOraT5xdrc" target="_blank"><img
+                        src="img/Spotify-icon.png" style="width:40px"></a>
+                <br>
+                <br>
+                <br>
+                <strong>Solo project</strong>
+                <br>
+                <br>
+                This is kind of my own playground, where I get to use everything I like about different genres and
+                sounds, and just experiment with it. The music usually ends up within a range of folk-inspired pop to
+                contemporary music.
+                I've played several solo concerts in Norway and Germany, and I'm planning on releasing some music within
+                the next couple of years.
+                <br>
+                <br>
+                <br>
+            <p id="misc"><strong>Miscellaneous</strong></p>
+            For some years, I collaborated with the Vietnamese activist and musician Mai Khoi. She is protesting the
+            Vietnamese government and how they treat the Vietnamese people and artists.
+            We worked together with her songs about her life and activism and played several shows in Oslo in 2019.
+            <br>
+            <br>
+            Since 2017, I've been collaborating with the vocalist Julie Kleive in different constellations. We play both
+            her own songs as well as cover songs, with completely new arrangements made by us.
+            We've played many concerts around in Norway, usually together with Torfinn Kleive (piano). Every year, we
+            have a Christmas concert in Bærum Kulturhus, in an ensemble consisting of Hilde Fjerdingøy (melodeon),
+            Torkjell Hovland (double bass), Torfinn Kleive, Julie Kleive and myself.
+            <br>
+            <br>
+            Since 2020, I've been singing in and conducting a female choir called "I kveld er det lov å være koret". We
+            sing folk tunes, popular music, and our own arrangements of various songs.
+            We are mostly known for our collaboration with the artist Nils Bech, whom we sung with in the Oslo Opera
+            House for a sold out Main Stage in the beginning of 2022, and at Oslo Pride 2022.
+            <br>
+            <br>
+            Since I started my professional career I've also been working both live and/or in the studio with bands and
+            artists such as
+            <br>
+            Moddi, Kråkesølv, Siv Jakobsen, Jakob, Nora Konstanse, Cold Mailman, Rikke Normann and Therese Aune, to name
+            a few.
+            <br>
+            <br>
+            <br>
+            <p id="comp"><strong>Compositions/arrangements</strong>
+                <br>
+                <br>
+                I write music for sinfonietta, choirs, smaller ensembles in different constellations and solo pieces for
+                piano, strings, and winds.
+                My works are both completely acoustic and a combination of electronics and acoustics. The music often
+                has a contemporary classical sound, but just as often a more folk and pop vibe.
+                I can make new, commissioned music or arrangements for various constellations on demand, both for
+                ensembles, solo instrumentalists or bands/artists who want "something extra" to their songs.
+                <br>
+                Contact me for sound examples or sheet music.
+            </p>
+            <br>
+            <p id="prod"><strong>Production/recording</strong>
+                <br>
+                <br>
+                I'm a well experienced studio musician, and I enjoy working together with bands/artists/producers in the
+                studio.
+                <br>
+                During the years, I've also built up my own home studio where I record a lot of music, both for myself
+                and others.
+                <br>
+                I started out working with musical theatre this way, and I have both made, played and recorded music for
+                full-length musicals in my own studio.
+                <br>
+            </p>
+            <br>
+            <p id="events"><strong>Events</strong>
+                <br>
+                <br>
+                I'm available for most types of events, like weddings, funerals, conferences and so on.
+                I have several constellations of ensembles, for any type of setting and musical requirements. Here are a
+                few:
+            <ul>
+                <li>Solo performance (cello/piano/voice)</li>
+                <li>Small ensemble (e.g., with more string players, guitar and/or another voice)</li>
+                <li>Vocal ensemble (from trio to octet)</li>
+                <li>Full band (with a long list of cover songs to choose from)</li>
+            </ul>
+            </p>
+            <br>
+            <p id="lessons"><strong>Lessons</strong>
+                <br>
+                <br>
+                I started teaching music in 2004 and have become well experienced since then. I give lessons in piano,
+                cello and vocals from beginner to intermediate level, in all ages.
+                <br>
+                In addition to private lessons, I have more than ten years of experience teaching musical theatre for
+                children, and four years of experience teaching music at a primary school.
+                <br>
+                It's important to me that the lessons are planned with each individual student's wishes and needs (and
+                of course age) in mind, so no courses are completely the same.
+                <br>
+                Each lesson/course can be adapted for the student, from the time frame of each lesson, to how often we
+                have lessons and what we focus on in each lesson.
+            </p>
+            </p>
+
+        </div>
+    </div>
+    <a class="prosjekt-link" href="#topp">To the top</a>
+</body>
+
+</html>

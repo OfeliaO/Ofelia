@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ofelia Ossum</title>
+    <style>
+       /* @import url('http://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+      /* @import url('https://fonts.cdnfonts.com/s/14188/HelveticaNeue-Thin.woff'); */
+      @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500&display=swap');
+        body {
+            /* background-image: url('img/Funkhaus.jpeg'); */
+            background: linear-gradient(45deg, #ebdaaa, rgb(194, 246, 237));
+            /* background-size: 960px; */
+            font-family: Work sans;
+            color: #3b2d02;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+
+        table {
+            width: 100%;
+            border: solid;
+            background-color: rgba(44, 127, 112, 0.386);
+        }
+
+        th {
+            border: solid;
+        }
+
+        td {
+            border: solid;
+        }
+
+        .kontakt-link {
+            color: rgb(29, 106, 79)
+        }
+
+        .kontakt-link:hover {
+            color: rgb(52, 168, 123);
+        }
+
+        .bakgrunnsfarge {
+            background-color: rgba(11, 8, 7, 0.5);
+        }
+
+        .ofelia-spesialfarge {
+            color: cornflowerblue;
+        }
+
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 105px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .banner {
+            background-image: url('img/Ped2.jpeg');
+            float: left;
+            width: 60%;
+        }
+
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 28px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 26px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 26px;
+        }
+
+        .vanlig-tekst {
+            font-size: 20px;
+            font-weight:400;
+        }
+
+        .kontakt-innhold {
+            color: rgb(93, 0, 255);
+            padding-left: 20px;
+            /* margin vs padding: margin lager avstand mellom seg og neste element, mens padding "fyller" ut seg selv */
+        }
+
+        .some-link {
+            color:#022c18;
+            text-decoration: none;
+            font-weight:bold;
+        }
+
+        .some-link:hover {
+            color:#022c18;
+            font-weight:400;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        @media screen and (min-width: 680px) {
+            .wrapper {
+                display: flex;
+                align-items: stretch;
+            }
+
+            .two {
+                flex: 3;
+                padding-right: 5rem;
+                padding-left: 3rem;
+            }
+            .prosjekt-link {
+            color: #022c18;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .prosjekt-link:hover {
+            color: #022c18;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 105px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 28px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 26px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 26px;
+        }
+
+        .bildetekst {
+            font-size: 14px;
+            margin-bottom: 12rem;
+        }
+        }
+
+        @media screen and (max-width: 679px) {
+            .wrapper {
+                display: flex;
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            .two {
+                flex: 3;
+            }
+            .prosjekt-link {
+            color: #022c18;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .prosjekt-link:hover {
+            color: #022c18;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        .overskrift {
+            font-weight: lighter;
+            margin-bottom: -15px;
+            font-size: 64px;
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .overskrift-bakgrunn {
+            margin-top: -25px;
+            background-image: url('img/Pedaler.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .meny-linker a {
+            color: #ebdaaa;
+            font-weight: lighter;
+            font-size: 22px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker span {
+            color: #ebdaaa;
+            font-weight: normal;
+            font-size: 20px;
+            padding-left: 2rem;
+            text-decoration: none;
+        }
+
+        .meny-linker a:hover {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .bildetekst {
+            font-size: 14px;
+            margin-bottom: 2rem;
+        }
+        }
+
+
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .two {
+            grid-column: 2;
+            grid-row: 1;
+            padding-right: 5%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overskrift-bakgrunn">
+        <h1 class="overskrift" style="color:#ebdaaa;">Ofelia Ossum</h1>
+        <h3 style="font-weight:lighter; font-size:38px; color:#ebdaaa; text-align:center">Musician and composer</h3>
+        <h3 style="text-align: left; font-weight:normal; color:#ebdaaa;">
+            <div class="meny-linker">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <span>Gallery</span>
+            </div>
+        </h3>
+    </div>
+    <br>
+    <div class="vanlig-tekst wrapper">
+       
+        </div>
+    </div>
+    <br>
+    <br>
+
+</body>
+
+</html>
