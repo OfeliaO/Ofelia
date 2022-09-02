@@ -17,6 +17,7 @@
             padding-right: 4%;
             max-width: 1920px;
             margin: auto;
+            height: 100vh;
         }
 
         table {
@@ -149,8 +150,15 @@
             margin-bottom: 12rem;
         }
         
+        .elbphi-bilde {
+            width: 85%;
+        }
         }
         @media screen and (max-width: 679px) {
+            body {
+                height: fit-content;
+            }
+            
             .wrapper {
                 display: flex;
                 align-items: stretch;
@@ -219,6 +227,9 @@
             font-size: 14px;
             margin-bottom: 2rem;
         }
+        .elbphi-bilde {
+            width: 100%;
+        }
         }
 
 
@@ -230,6 +241,7 @@
             flex: 1;
             padding-right: 5%;
         }
+    
     </style>
 </head>
 
@@ -249,7 +261,7 @@
     <br>
     <div class="vanlig-tekst wrapper">
         <div class="one">
-            <img style="width: 85%" src="img/Elbphi liggende.jpeg" /><br>
+            <img class="elbphi-bilde" src="img/Elbphi liggende.jpeg" /><br>
             <p style="font-size:14px;">Photo: Lars Fremmerlid</p>
         </div>
         <div class="vanlig-tekst two">

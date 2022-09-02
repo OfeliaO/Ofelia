@@ -15,8 +15,22 @@
             color: #3b2d02;
             padding-left: 4%;
             padding-right: 4%;
-                max-width: 1920px;
-                margin: auto;
+            max-width: 1920px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border: solid;
+            background-color: rgba(44, 127, 112, 0.386);
+        }
+
+        th {
+            border: solid;
+        }
+
+        td {
+            border: solid;
         }
 
         .kontakt-link {
@@ -35,47 +49,10 @@
             color: cornflowerblue;
         }
 
-        .overskrift {
-            font-weight: lighter;
-            margin-bottom: -15px;
-            font-size: 105px;
-            text-align: center;
-            padding-top: 3%;
-        }
-
-        .overskrift-bakgrunn {
-            margin-top: -25px;
-            background-image: url('img/Pedaler.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
         .banner {
             background-image: url('img/Ped2.jpeg');
             float: left;
             width: 60%;
-        }
-
-        .meny-linker a {
-            color: #ebdaaa;
-            font-weight: lighter;
-            font-size: 28px;
-            padding-left: 2rem;
-            text-decoration: none;
-        }
-
-        .meny-linker span {
-            color: #ebdaaa;
-            font-weight: normal;
-            font-size: 26px;
-            padding-left: 2rem;
-            text-decoration: none;
-        }
-
-        .meny-linker a:hover {
-            text-decoration: none;
-            font-weight: normal;
-            font-size: 26px;
         }
 
         .vanlig-tekst {
@@ -88,6 +65,18 @@
             padding-left: 20px;
             /* margin vs padding: margin lager avstand mellom seg og neste element, mens padding "fyller" ut seg selv */
         }
+
+        .some-link {
+            color: #022c18;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .some-link:hover {
+            color: #022c18;
+            font-weight: 400;
+        }
+
 
         @media screen and (min-width: 680px) {
             .wrapper {
@@ -159,6 +148,7 @@
             font-size: 14px;
             margin-bottom: 12rem;
         }
+        
         }
         @media screen and (max-width: 679px) {
             .wrapper {
@@ -166,8 +156,9 @@
                 align-items: stretch;
                 flex-direction: column;
             }
-            .wrapper div {
-                padding: 0!important;
+
+            .two {
+                flex: 3;
             }
             .prosjekt-link {
             color: #022c18;
@@ -229,6 +220,16 @@
             margin-bottom: 2rem;
         }
         }
+
+
+        .one {
+            flex: 1;
+        }
+
+        .two {
+            flex: 1;
+            padding-right: 5%;
+        }
     </style>
 </head>
 
@@ -238,54 +239,44 @@
         <h3 class="undertittel">Musician and composer</h3>
         <h3 style="text-align: left; font-weight:normal; color:#ebdaaa;">
             <div class="meny-linker">
-                <a href="index.html">Home</a>
-                <span>About</span>
+                <span>Home</span>
+                <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
                 <a href="gallery.html">Gallery</a>
             </div>
         </h3>
     </div>
     <br>
-    <div class="wrapper">
-        <div style="flex: 1;">
-            
-            <img style="width: 100%" src="img/Team Me synge mindre.jpeg" /><br>
-            <p style="font-size: 14px;">Photo: Bård Gundersen</p>
+    <div class="vanlig-tekst wrapper">
+        <div class="one">
+            <img style="width: 85%" src="img/Elbphi liggende.jpeg" /><br>
+            <p style="font-size:14px;">Photo: Lars Fremmerlid</p>
         </div>
-        <div  style="flex: 2; padding-left:4rem; padding-right:4rem">
-            <p class="vanlig-tekst"><strong>Bio</strong>
+        <div class="vanlig-tekst two">
+            <p><strong>Ofelia Ossum</strong> is a freelance musician and composer based in Oslo, Norway. </span></p>
+            <p>My main instruments are cello, piano and vocal, and I
+                compose
+                and
+                arrange music within a wide range of genres.</p>
+            <p>I'm available for live concerts, studio sessions, instrument
+                lessons, commissioned works, and other projects.</p>
+            <h4>Contact</h4>
+            <p>e-mail: <a class="kontakt-link"
+                    href="mailto:ofeliaossum@gmail.com">ofeliaossum@gmail.com</a><br><br>phone:
+                <a class="kontakt-link" href="tel:+4748222818">(+47) 48 22 28 18</a>
                 <br>
                 <br>
-                <strong>Julie Ofelia Østrem Ossum</strong> (b. 1990) is a Norwegian musician and composer, and her main instruments are cello, piano and voice. 
-                Although playing mostly classical music growing up, she has mainly focused on alternative indie/pop/rock and experimental contemporary music in the majority of her professional career.
-                <br>
-                <br>
-                For some years, she studied contemporary classical music composition at the Norwegian Academy of Music, and before that, musicology at the University of Oslo.
-                She has also been teaching music since an early age, both private individual lessons, children's choir/musical theatre and as a music teacher at a primary school.
-                <br>
-                <br>
-                Already as a young girl, she started to play in bands and writing songs which she performed at numerous concerts, in addition to the classical concerts she played reguarly. 
-                One of the highlights was in 2004, when she participated in Melodi Grand Prix jr. (Junior Eurovision Song Contest), with a self-written song together with Ida Margrete Rinde Sunde.<br>
-                Since then, she has played in several bands, which has been her main occupation through her career.<br>
-                In 2009, she was awarded Budstikkas Kulturstipend, a grant for young, promising talents in the culture field.
-                <br>
-                <br>
-                Ofelia likes to mix and experiment with different genres, like traditional Norwegian folk music, pop, contemporary classical music and others, 
-                and also to experiment with the instruments themselves. Especially when playing cello, she is known for adding various amounts of effects to push the limits 
-                of what's possible in both live settings and in studio. As a pianist and vocalist she is also comfortable playing traditional classical music as well as pop music and experimental/improvisation. 
-                She is quite happy playing all three instruments almost at the same time.
-                <br>
-                <br>
-                When composing and arranging, she writes a lot of arrangements for her own bands as well as other bands/artists, with especially string and brass/wind ensembles, 
-                in addition to writing her own music as a solo artist. She has also many years of experience writing, recording and producing music for musical theatre.
-                <br>
-                Amongst her original compositions you find pieces for sinfonietta, smaller ensembles in different constellations and solo pieces for piano, strings and winds. 
-                Like when she plays herself, she sometimes adds parts of live electronics and/or improvisation as well. Ofelia has also written a fair amount of compositions and arrangements 
-                for several types of vocal ensembles; like trios, quintets, octets and choirs.
+                <a href="https://www.instagram.com/ofeliaossum/" target="_blank"><img
+                        src="https://instagram.com/favicon.ico" style="padding-left:1rem; padding-right:1rem"></a>
+                <a class="some-link" href="https://www.instagram.com/ofeliaossum/" target="_blank">ofeliaossum</a>
             </p>
 
         </div>
     </div>
+    <br>
+    <br>
+
+
 </body>
 
 </html>
